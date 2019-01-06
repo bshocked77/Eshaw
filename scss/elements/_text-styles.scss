@@ -1,0 +1,25 @@
+// Google Font Load
+@import url('https://fonts.googleapis.com/css?family=Muli:700,400');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+$body-font: 'Lato', sans-serif;
+$header-font: 'Muli', sans-serif;
+$cta-font: 'Roboto', sans-serif;
+
+
+h1, h2 {
+ font-family: $header-font;
+ margin: 0px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+
+p {
+  font-family:  $body-font;
+  font-size: 16px;
+  color: #000000;
+}

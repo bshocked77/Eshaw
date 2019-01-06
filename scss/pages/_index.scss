@@ -1,0 +1,45 @@
+
+
+body#index {
+  background-color: $brand-black;
+}
+
+
+#cover-copy{
+  padding-top:7%;
+  padding-left: 6vw;
+
+    h1{
+      font-size: 135px;
+      line-height: 110px;
+      color: #ffffff;
+    }
+
+    h2{
+      margin-top: 20px;
+      margin-left: 16px;
+      margin-bottom: 24px;
+      color: #ffffff;
+    }
+
+      #icon-row{
+        margin-top: 20px;
+        margin-left: 60px;
+        margin-bottom: 28px;
+
+        svg{
+          width: 45px;
+          height: 45px;
+          margin-right: 40px;
+          fill: #ffffff;
+        }
+
+      }
+
+
+   #cta-row {
+     margin-left: 14px;
+   }
+
+
+}

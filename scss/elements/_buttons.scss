@@ -1,0 +1,34 @@
+
+$cta-padding: 8px 35px;
+
+.cta {
+  display: inline-block;
+  font-family: $cta-font;
+  text-transform: uppercase;
+  padding: $cta-padding;
+  border: 1.5px solid black;
+  font-weight: 500;
+}
+
+
+// Index Page CTAs
+#cover-copy {
+  .cta{
+    margin-right: 32px;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  .cta:hover{
+    color: $brand-black;
+    background-color: #ffffff;
+  }
+}
+
+
+// CV CTAs
+
+p#cvcta{
+  padding-top: 25px;
+  font-family: $cta-font;
+}
