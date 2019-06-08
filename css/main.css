@@ -15,11 +15,12 @@ body {
   width: 100vw;
   height: 320px;
   background-color: #e6e6de; }
+  #intro-slice p:first-of-type {
+    padding-top: 70px; }
   #intro-slice p {
     font-size: 20px;
     text-align: left;
     width: 800px;
-    padding-top: 70px;
     padding-left: 110px;
     margin: 0px;
     line-height: 32px; }
@@ -150,8 +151,26 @@ body#index {
   #cover-copy #cta-row {
     margin-left: 14px; }
 
-#portfolio-slice .content-holder {
-  width: 650PX;
-  margin: auto; }
+canvas#radarChart {
+  display: block;
+  float: right;
+  margin-top: 30px;
+  margin-right: 14vw; }
+
+#portfolio #intro-slice {
+  height: 200px; }
+#portfolio .content-holder {
+  width: 1040PX;
+  margin: auto;
+  margin-top: 40px; }
+  #portfolio .content-holder .content-row {
+    clear: both;
+    margin-bottom: 80px; }
+    #portfolio .content-holder .content-row .copy-holder {
+      float: left;
+      max-width: 380px;
+      margin-right: 40px; }
+    #portfolio .content-holder .content-row .image-holder {
+      margin-top: -42px; }
 
 /*# sourceMappingURL=main.css.map */

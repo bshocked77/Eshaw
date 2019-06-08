@@ -1,11 +1,29 @@
-// Portfolio page content grid using flexbox
 
-#portfolio-slice{
+#portfolio{
+  #intro-slice{
+     height: 200px;
+   }
 
-  .content-holder{
-    width: 650PX;
-    margin: auto;
-    }
+    // Portfolio page content grid using flexbox
+      .content-holder{
+        width: 1040PX;
+        margin: auto;
+        margin-top: 40px;
 
+          .content-row{
+            clear: both;
+            margin-bottom: 80px;
+
+            .copy-holder{
+              float: left;
+              max-width: 380px;
+              margin-right: 40px;
+            }
+
+            .image-holder{
+              margin-top: -42px;
+            }
+          }
+      }
 
 }
