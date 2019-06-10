@@ -1,9 +1,55 @@
 // Chart css
-
 canvas#radarChart {
   display: block;
   float: right;
   margin-top: 30px;
   margin-right: 14vw;
+}
 
+// Page layout CSS
+
+#about{
+  .content-holder{
+    width: 84%;
+    margin: auto;
+    margin-top: 40px;
+
+    .left-list{
+      float: left;
+      width: 200px;
+      margin-right: 200px;
+    }
+
+    .right-list{
+      float: left;
+    }
+  }
+
+}
+
+// Responsive Breakpoints
+@media only screen and (max-width: 850px) {
+  #about{
+    .content-holder{
+      width: 100%;
+      margin-top: 40px;
+      .left-list,
+      .right-list{
+        float: none;
+        margin-left: 100px;
+      }
+    }
+ }
+}
+
+@media only screen and (max-width: 680px) {
+  #about{
+    .content-holder{
+      .left-list,
+      .right-list{
+        float: none;
+        margin-left: 40px;
+      }
+    }
+ }
 }

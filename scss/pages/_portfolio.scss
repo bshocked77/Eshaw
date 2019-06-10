@@ -1,14 +1,20 @@
 
 #portfolio{
-  #intro-slice{
-     height: 200px;
-   }
-
-    // Portfolio page content grid using flexbox
       .content-holder{
-        width: 1040PX;
+        width: 84%;
         margin: auto;
         margin-top: 40px;
+
+        a {
+          color: $text-links-colour;
+          font-weight: bold;
+          &:hover {
+          color: $hover-colour;
+          }
+          &:active {
+          color: $hover-colour;
+           }
+        }
 
           .content-row{
             clear: both;
@@ -26,4 +32,28 @@
           }
       }
 
+}
+
+@media only screen and (max-width: 850px) {
+  #portfolio{
+        .content-holder{
+          text-align: center;
+
+          .content-row{
+            .copy-holder{
+              float: none;
+              text-align: center;
+              margin: auto;
+            }
+
+            .image-holder{
+              margin-top: 20px;
+
+              img{
+                width: 230px;
+              }
+            }
+          }
+       }
+  }
 }

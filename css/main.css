@@ -6,29 +6,44 @@ body {
   height: 100vh;
   margin: 0px; }
 
+#intro-slice {
+  width: 100vw;
+  background-color: #e6e6de; }
+  #intro-slice p:first-of-type {
+    padding-top: 70px; }
+  #intro-slice p:last-of-type {
+    padding-bottom: 60px; }
+  #intro-slice p {
+    font-size: 20px;
+    text-align: left;
+    max-width: 800px;
+    padding-left: 110px;
+    margin: 0px;
+    line-height: 32px;
+    padding-right: 30px; }
+
+@media only screen and (max-width: 850px) {
+  #intro-slice p {
+    font-size: 18px;
+    line-height: 24px; } }
+@media only screen and (max-width: 680px) {
+  #intro-slice p:first-of-type {
+    padding-top: 50px; }
+  #intro-slice p {
+    padding: 0px 40px; } }
+h1, h2 {
+  font-family: "Muli", sans-serif;
+  margin: 0px; }
+
 #about h1, #portfolio h1 {
   font-size: 80px;
   display: inline-block;
   padding-left: 36px; }
 
-#intro-slice {
-  width: 100vw;
-  height: 320px;
-  background-color: #e6e6de; }
-  #intro-slice p:first-of-type {
-    padding-top: 70px; }
-  #intro-slice p {
-    font-size: 20px;
-    text-align: left;
-    width: 800px;
-    padding-left: 110px;
-    margin: 0px;
-    line-height: 32px; }
-
-h1, h2 {
-  font-family: "Muli", sans-serif;
-  margin: 0px; }
-
+@media only screen and (max-width: 450px) {
+  #about h1, #portfolio h1 {
+    font-size: 60px;
+    padding-left: 10px; } }
 h2 {
   font-size: 26px; }
 
@@ -36,6 +51,10 @@ p {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #000000; }
+
+a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none; }
 
 .cta {
   display: inline-block;
@@ -53,6 +72,11 @@ p {
   color: #1b1b1b;
   background-color: #ffffff; }
 
+@media only screen and (max-width: 440px) {
+  #cover-copy .cta {
+    margin-bottom: 15px;
+    min-width: 85px;
+    text-align: center; } }
 p#cvcta {
   padding-top: 25px;
   font-family: "Roboto", sans-serif; }
@@ -124,6 +148,14 @@ p#cvcta {
   position: absolute;
   background-color: #00000080; }
 
+@media only screen and (max-width: 450px) {
+  #menu-icon {
+    padding-left: 16px;
+    padding-bottom: 2px; } }
+ul li {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; }
+
 body#index {
   background-color: #1b1b1b; }
 
@@ -151,18 +183,67 @@ body#index {
   #cover-copy #cta-row {
     margin-left: 14px; }
 
+/* Mobile Breakpoints */
+@media only screen and (max-width: 680px) {
+  #cover-copy h1 {
+    font-size: 80px;
+    line-height: 80px; } }
+@media only screen and (max-width: 440px) {
+  #cover-copy h1 {
+    font-size: 60px;
+    line-height: 60px; }
+  #cover-copy h2 {
+    margin-top: 8px;
+    margin-left: 6px; }
+  #cover-copy #icon-row {
+    margin-left: 6px; }
+    #cover-copy #icon-row svg {
+      width: 40px;
+      height: 40px;
+      margin-right: 26px; }
+  #cover-copy #cta-row {
+    margin-left: 8px; } }
 canvas#radarChart {
   display: block;
   float: right;
   margin-top: 30px;
   margin-right: 14vw; }
 
-#portfolio #intro-slice {
-  height: 200px; }
-#portfolio .content-holder {
-  width: 1040PX;
+#about .content-holder {
+  width: 84%;
   margin: auto;
   margin-top: 40px; }
+  #about .content-holder .left-list {
+    float: left;
+    width: 200px;
+    margin-right: 200px; }
+  #about .content-holder .right-list {
+    float: left; }
+
+@media only screen and (max-width: 850px) {
+  #about .content-holder {
+    width: 100%;
+    margin-top: 40px; }
+    #about .content-holder .left-list,
+    #about .content-holder .right-list {
+      float: none;
+      margin-left: 100px; } }
+@media only screen and (max-width: 680px) {
+  #about .content-holder .left-list,
+  #about .content-holder .right-list {
+    float: none;
+    margin-left: 40px; } }
+#portfolio .content-holder {
+  width: 84%;
+  margin: auto;
+  margin-top: 40px; }
+  #portfolio .content-holder a {
+    color: #0f7986;
+    font-weight: bold; }
+    #portfolio .content-holder a:hover {
+      color: #06272b; }
+    #portfolio .content-holder a:active {
+      color: #06272b; }
   #portfolio .content-holder .content-row {
     clear: both;
     margin-bottom: 80px; }
@@ -172,5 +253,17 @@ canvas#radarChart {
       margin-right: 40px; }
     #portfolio .content-holder .content-row .image-holder {
       margin-top: -42px; }
+
+@media only screen and (max-width: 850px) {
+  #portfolio .content-holder {
+    text-align: center; }
+    #portfolio .content-holder .content-row .copy-holder {
+      float: none;
+      text-align: center;
+      margin: auto; }
+    #portfolio .content-holder .content-row .image-holder {
+      margin-top: 20px; }
+      #portfolio .content-holder .content-row .image-holder img {
+        width: 230px; } }
 
 /*# sourceMappingURL=main.css.map */

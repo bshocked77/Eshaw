@@ -7,34 +7,50 @@ body {
 }
 
 //Landing Page Layouts
-
-#about, #portfolio {
-  h1{
-    font-size: 80px;
-    display: inline-block;
-    padding-left: 36px;
-  }
-}
-
-
 #intro-slice{
   width: 100vw;
-  height: 320px;
   background-color: #e6e6de;
 
   p:first-of-type{
     padding-top: 70px;
   }
 
+  p:last-of-type{
+    padding-bottom: 60px;
+  }
+
   p{
    font-size: 20px;
    text-align: left;
-   width: 800px;
+   max-width: 800px;
    padding-left: 110px;
    margin: 0px;
    line-height: 32px;
+   padding-right: 30px;
   }
 
+}
+
+// Responsive Breakpoints
+@media only screen and (max-width: 850px) {
+  #intro-slice{
+    p{
+      font-size: 18px;
+       line-height: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #intro-slice{
+    p:first-of-type{
+      padding-top: 50px;
+    }
+
+    p{
+      padding: 0px 40px;
+    }
+  }
 }
 
 
@@ -44,6 +60,7 @@ body {
 // Component Stylesheets
 @import 'elements/buttons';
 @import 'elements/sidenav';
+@import 'elements/list';
 
 
 // Index Page

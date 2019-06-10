@@ -6,11 +6,29 @@
 $body-font: 'Lato', sans-serif;
 $header-font: 'Muli', sans-serif;
 $cta-font: 'Roboto', sans-serif;
-
+$text-links-colour: #0f7986;
+$hover-colour: #06272b;
 
 h1, h2 {
  font-family: $header-font;
  margin: 0px;
+}
+
+#about, #portfolio {
+  h1{
+    font-size: 80px;
+    display: inline-block;
+    padding-left: 36px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #about, #portfolio {
+    h1{
+      font-size: 60px;
+      padding-left: 10px;
+    }
+  }
 }
 
 h2 {
@@ -22,4 +40,9 @@ p {
   font-family:  $body-font;
   font-size: 16px;
   color: #000000;
+}
+
+a {
+  font-family:  $body-font;
+  text-decoration: none;
 }

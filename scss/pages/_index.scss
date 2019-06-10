@@ -1,5 +1,4 @@
 
-
 body#index {
   background-color: $brand-black;
 }
@@ -41,5 +40,45 @@ body#index {
      margin-left: 14px;
    }
 
+}
 
+/* Mobile Breakpoints */
+
+@media only screen and (max-width: 680px) {
+  #cover-copy{
+      h1{
+        font-size: 80px;
+        line-height: 80px;
+      }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  #cover-copy{
+      h1{
+        font-size: 60px;
+        line-height: 60px;
+      }
+
+      h2{
+        margin-top: 8px;
+        margin-left: 6px;
+      }
+
+        #icon-row{
+          margin-left: 6px;
+
+          svg{
+            width: 40px;
+            height: 40px;
+            margin-right: 26px;
+          }
+
+        }
+
+     #cta-row {
+       margin-left: 8px;
+     }
+
+  }
 }
