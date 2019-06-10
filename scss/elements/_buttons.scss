@@ -3,11 +3,13 @@ $cta-padding: 8px 35px;
 
 .cta {
   display: inline-block;
-  font-family: $cta-font;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  padding: $cta-padding;
+  padding: 8px 35px;
   border: 1.5px solid black;
   font-weight: 500;
+  min-width: 85px;
+  text-align: center;
 }
 
 
