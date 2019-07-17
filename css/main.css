@@ -168,6 +168,10 @@ body#index {
     font-size: 135px;
     line-height: 110px;
     color: #ffffff; }
+    #cover-copy h1:last-of-type {
+      border-bottom: 3px solid #0f7986;
+      padding-bottom: 15px;
+      max-width: 590px; }
   #cover-copy h2 {
     margin-top: 20px;
     margin-left: 16px;
@@ -189,22 +193,30 @@ body#index {
 @media only screen and (max-width: 680px) {
   #cover-copy h1 {
     font-size: 80px;
-    line-height: 80px; } }
-@media only screen and (max-width: 440px) {
-  #cover-copy h1 {
-    font-size: 60px;
-    line-height: 60px; }
+    line-height: 80px; }
+    #cover-copy h1:last-of-type {
+      max-width: 346px; }
   #cover-copy h2 {
-    margin-top: 8px;
-    margin-left: 6px; }
-  #cover-copy #icon-row {
-    margin-left: 6px; }
-    #cover-copy #icon-row svg {
-      width: 40px;
-      height: 40px;
-      margin-right: 26px; }
-  #cover-copy #cta-row {
-    margin-left: 8px; } }
+    margin-right: 45px; } }
+@media only screen and (max-width: 440px) {
+  #cover-copy {
+    padding-top: 20%; }
+    #cover-copy h1 {
+      font-size: 60px;
+      line-height: 60px; }
+      #cover-copy h1:last-of-type {
+        max-width: 265px; }
+    #cover-copy h2 {
+      margin-top: 8px;
+      margin-left: 6px; }
+    #cover-copy #icon-row {
+      margin-left: 6px; }
+      #cover-copy #icon-row svg {
+        width: 40px;
+        height: 40px;
+        margin-right: 26px; }
+    #cover-copy #cta-row {
+      margin-left: 8px; } }
 canvas#radarChart {
   display: block;
   float: right;
