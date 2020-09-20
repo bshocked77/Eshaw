@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "website for elizabeth shaw",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass ./scss/main.scss > ./css/main.css -watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bshocked77/Eshaw.git"
+  },
+  "author": "Elizabeth Shaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bshocked77/Eshaw/issues"
+  },
+  "homepage": "https://github.com/bshocked77/Eshaw#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

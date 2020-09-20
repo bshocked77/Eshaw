@@ -1,15 +1,10 @@
 $brand-black: #1b1b1b;
-
-body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0px;
-}
+$brand-blue:  #0f7986;
 
 //Landing Page Layouts
 #intro-slice{
   width: 100vw;
-  background-color: #e6e6de;
+  background-color: $brand-blue;
 
   p:first-of-type{
     padding-top: 70px;
@@ -27,6 +22,7 @@ body {
    margin: 0px;
    line-height: 32px;
    padding-right: 30px;
+   color: #ffffff;
   }
 
 }
@@ -53,7 +49,6 @@ body {
   }
 }
 
-
 // Text styling
 @import 'elements/text-styles';
 
@@ -62,12 +57,7 @@ body {
 @import 'elements/sidenav';
 @import 'elements/list';
 
-
-// Index Page
+// Pages
 @import 'pages/index';
-
-// About Page
 @import 'pages/about';
-
-// Portfolio Page
 @import 'pages/portfolio';

@@ -9,6 +9,10 @@ canvas#radarChart {
 // Page layout CSS
 
 #about{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  
   .content-holder{
     width: 84%;
     margin: auto;

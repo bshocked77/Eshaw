@@ -1,6 +1,9 @@
 
 body#index {
   background-color: $brand-black;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
 }
 
 
@@ -14,7 +17,7 @@ body#index {
       color: #ffffff;
 
       &:last-of-type{
-        border-bottom: 3px solid #0f7986;
+        border-bottom: 3px solid $brand-blue;
         padding-bottom: 15px;
         max-width: 590px;
       }
